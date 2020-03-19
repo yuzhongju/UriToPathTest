@@ -9,7 +9,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.DocumentsContract;
-import android.util.Log;
 
 public class FileUriUtils {
 
@@ -23,7 +22,6 @@ public class FileUriUtils {
 			//如果是document类型uri, 则通过id获取
 			if (DocumentsContract.isDocumentUri(context, uri)) {
 				String docId = DocumentsContract.getDocumentId(uri);
-				Log.d("aaa", "DOCID: " + docId);
 				if (isDownloadsDocuments(uri)) {
 					Uri contentUri = ContentUris.withAppendedId(Uri.parse("content://downloads/public_downloads"), Long.valueOf(docId));
 					String[] proj = {"_data"};
