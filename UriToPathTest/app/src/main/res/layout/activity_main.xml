@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="chooseFile"
+		android:text="Choose File"/>
+
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:shrinkColumns="1"
+		android:stretchColumns="1">
+
+		<TableRow>
+
+			<TextView
+				android:text="系统SDK"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/system_os"
+				android:padding="10dp"/>
+
+		</TableRow>
+
+		<TableRow>
+
+			<TextView
+				android:text="Uri"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/file_uri"
+				android:padding="10dp"/>
+
+		</TableRow>
+
+		<TableRow>
+
+			<TextView
+				android:text="Scheme"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/scheme"
+				android:padding="10dp"/>
+
+		</TableRow>
+
+		<TableRow>
+
+			<TextView
+				android:text="Authority"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/authority"
+				android:padding="10dp"
+				android:textIsSelectable="true"/>
+
+		</TableRow>
+
+		<TableRow>
+
+			<TextView
+				android:text="Path"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/path"
+				android:padding="10dp"
+				android:textIsSelectable="true"/>
+
+		</TableRow>
+
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Uri类型"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:id="@+id/uri_type"/>
+
+		</TableRow>
+
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="RealPath"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:id="@+id/real_path"/>
+
+		</TableRow>
+
+	</TableLayout>
+
+</LinearLayout>
+
